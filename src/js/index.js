@@ -42,7 +42,7 @@ function callApi(params) {
       const getPhotosUrls = photos.map((val) => {
         return `<img height="300" width="300" style="border: 1px solid transparent;
         border-radius: 20px;margin-left: 35px;
-        margin-bottom: 35px;" src="${val.urls.small}" title="${val?.alt_description}"/>`
+        margin-bottom: 35px;cursor: pointer;" src="${val.urls.small}" title="${val?.alt_description}"/>`
       });
 
       console.log(getPhotosUrls);
@@ -101,7 +101,7 @@ function favouriteFunc(){
     const favouriteUrls=favouriteList.map((val)=>{
       return `<img height="300" width="300" style="border: 1px solid transparent;
       border-radius: 20px;margin-left: 35px;
-      margin-bottom: 35px;" src="${val.urls.small}" title="${val?.alt_description}"/>`
+      margin-bottom: 35px;cursor: pointer;" src="${val.urls.small}" title="${val?.alt_description}"/>`
     });
       let tempContainer=document.createElement('div');
       favouriteUrls.forEach((imgVal,index)=>{

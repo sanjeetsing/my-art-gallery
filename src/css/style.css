@@ -76,3 +76,13 @@ background-color: #333;
 color: white;
 cursor: pointer;
 }
+
+img{
+  transition: transform 0.2s;
+}
+
+img:hover{
+  transform:scale(1.2);
+}
+
+
