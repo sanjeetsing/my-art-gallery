@@ -38,6 +38,7 @@ font-size: 17px;
 }
 #menu_layout{
   margin-right: 30px;
+  
 }
 #footer{
 /* height: 30px; */
@@ -76,7 +77,14 @@ background-color: #333;
 color: white;
 cursor: pointer;
 }
-
+nav ul li a:focus{
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  }
+.active{
+  border-bottom: 2px solid #333;
+}
 img{
   transition: transform 0.2s;
 }

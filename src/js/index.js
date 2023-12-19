@@ -14,7 +14,6 @@ atags.forEach((atag)=>{
   atag.addEventListener('click',(event)=>{
     event.preventDefault();
     const value=atag.dataset.value;
-    
     console.log(event,value);
     if (value=='Favourite') {
       favouriteFlag=true;
@@ -26,6 +25,14 @@ atags.forEach((atag)=>{
     }
   });
 });
+
+const linksId = document.querySelectorAll('nav ul li a');
+linksId.forEach((link)=>{link.addEventListener('click',(event)=>{
+  const links = document.querySelectorAll('nav ul li a');
+    links.forEach((linked)=>{linked.classList.remove('active')});
+
+    event.target.classList.add('active');
+})});
 
 function callApi(params) {
   
